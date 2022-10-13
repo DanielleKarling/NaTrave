@@ -81,7 +81,6 @@ export const Dashboard = () => {
                            >
                 <Icon name="profile" className="w-10" />
               </a>
-              <span className="font-bold">{`Olá, ${user?.name}!`}</span>
             </div>
           </div>
         </section>
