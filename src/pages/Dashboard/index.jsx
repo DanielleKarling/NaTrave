@@ -43,7 +43,7 @@ export const Dashboard = () => {
 
   const isLoading = games.loading || loading;
   const hasError = games.error || error;
-  const isDone = !isLoading || !hasError;
+  const isDone = !isLoading && !hasError;
 
   useEffect(() => {
     fetchHunches();
