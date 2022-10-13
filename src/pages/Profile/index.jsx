@@ -76,7 +76,9 @@ export const Profile = () => {
             <a href="/dashboard">
               <Icon name="back" className="w-10" />
             </a>
-            <h3 className="p-2 text-2xl font-bold">{`Olá, ${user?.name}!`}</h3>
+            <h3 className="p-2 text-2xl font-bold">
+              {`${auth?.user?.id ? 'Olá, ': ''}${user?.name}!`}
+            </h3>
             {auth?.user?.id && (
             <div onClick={logout} className="p-2 cursor-pointer">
               Sair
