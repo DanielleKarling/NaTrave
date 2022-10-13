@@ -35,13 +35,13 @@ export const DateSelect = ({ currentDate, onChange }) => {
     <div className="p-4 flex space-x-4 items-center justify-center">
       <Icon
         name="arrowLeft"
-        className={`w-6 ${canPrevDay() ? "text-red-500" : "text-gray-300"}`}
+        className={`w-6 cursor-pointer ${canPrevDay() ? "text-red-500" : "text-gray-300"}`}
         onClick={prevDay}
       />
       <span className="font-bold">
         {format(date, "d 'de' MMMM", { locale: ptBR })}
       </span>
-      <Icon name="arrowRight" className="w-6 text-red-500" onClick={nextDay} />
+      <Icon name="arrowRight" className="w-6 cursor-pointer text-red-500" onClick={nextDay} />
     </div>
   );
 };
